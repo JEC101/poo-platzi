@@ -7,4 +7,10 @@ class UberX extends Car {
         this.brand = brand;
         this.model = model;
     }
+
+    @Override //POLIMORFISMO sobre-escribe método padre, agregado bran y modelo al print
+    void printDataCar() {
+        super.printDataCar();
+        System.out.println("Modelo: " + model + " Marca: " + brand);
+    }
 }
